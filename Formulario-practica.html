@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/stylesheet.css"/>
+		<title>Formulario</title>
+	</head>
+
+	<body>
+
+		<h2>Form Here</h2>
+
+		<form>
+
+		<label for="nombre">Nombre</label>
+		<input type="text" name="nombre" placeholder="placeholder text" required/>
+		<br/><br/>
+
+		<label for="mail">Email</label>
+		<input type="email" name="email" placeholder="placeholder text" size="50" required/>
+		<br/><br/>
+
+		<label for="site">Website</label>
+		<input type="url" name="site" placeholder="placeholder text"/>
+		<br/><br/>
+
+		<label for="txtarea">Message</label>
+		<textarea type="textbox" name="txtarea" cols="60" rows="3"></textarea>
+		<br/><br/>
+
+		<fieldset class="big-fieldset">
+			<legend>Card details</legend>
+			<fieldset>
+				<legend>Card type</legend>
+				
+				<input type="radio" name="visa">
+				<label for="visa">VISA</label><br/>
+				
+				<input type="radio" name="mastercard">
+				<label for="mastercard">MasterCard</label><br/>
+				
+				<input type="radio" name="americanexpress">
+				<label for="american-express">AmericanExpress</label><br/><br/>
+				
+
+				<label for="name">Name</label>
+				<input type="text" name="name"/><br/><br/>
+
+				<label for="card-number">Card Number</label>
+				<input type="text" name="card-number"/><br/><br/>
+
+
+				<label for="security-code">Security-code</label>
+				<input type="text" name="security-code" maxlength="3" size="3" /><br/><br/>
+
+				<label for="expire-date">Expire Date</label>
+				<input type="date"/>
+
+			</fieldset>
+		</fieldset>
+
+		<input type="submit" method="post" value="Enviar"/>
+			
+		</form>
+	</body>
+</html>
